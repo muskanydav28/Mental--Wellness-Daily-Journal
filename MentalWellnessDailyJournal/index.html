@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Wellness Daily Journal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🧠 Mental Wellness Journal</h1>
+    <p>Log your mood daily and reflect on your well-being.</p>
+  </header>
+
+  <main>
+    <!-- Mood Entry Form -->
+    <section class="form-section">
+      <h2>Log Your Mood</h2>
+      <form id="journalForm">
+        <label for="mood">How are you feeling today?</label>
+        <select id="mood" required>
+          <option value="">-- Select Mood --</option>
+          <option value="1">😔 Very Sad</option>
+          <option value="2">😕 Sad</option>
+          <option value="3">😐 Neutral</option>
+          <option value="4">🙂 Happy</option>
+          <option value="5">😃 Very Happy</option>
+        </select>
+
+        <label for="notes">Write your thoughts (optional):</label>
+        <textarea id="notes" rows="4" placeholder="Today I felt..."></textarea>
+
+        <button type="submit">Save Entry</button>
+      </form>
+    </section>
+
+    <!-- Results Section -->
+    <section class="result-section">
+      <h2>Your Mood Trend</h2>
+      <canvas id="moodChart"></canvas>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+      <h2>Quote of the Day</h2>
+      <p id="quote"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌸 Take care of your mind and body 🌸</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

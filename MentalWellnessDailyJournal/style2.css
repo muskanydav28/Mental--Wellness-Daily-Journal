@@ -1,0 +1,98 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f7f7; /* Softer background */
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #2a7f62;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Section Styling */
+section {
+  background: #ffffff;
+  border-radius: 12px; /* smoother corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* softer shadow */
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+  transform: scale(1.01); /* slight hover effect */
+}
+
+/* Form Elements */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Button Styling */
+button {
+  background-color: #2a7f62;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #256e55;
+  transform: translateY(-2px); /* small lift effect */
+}
+
+/* Journal Entries */
+#entries {
+  margin-top: 15px;
+}
+
+.entry {
+  background: #f9f9f9;
+  border-left: 5px solid #2a7f62;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.entry p {
+  margin-bottom: 5px;
+  color: #333;
+}
